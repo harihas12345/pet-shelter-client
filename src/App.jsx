@@ -25,12 +25,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/adopt" element={<AdoptionForm />} />
           <Route path="/confirmation" element={<Confirmation />} />
           <Route path="/error" element={<Error />} />
           <Route path="/pets" element={<Pets />} />
-          <Route path="/applications" element={<Applications />} />
-          <Route path="/applications/:id" element={<ApplicationDetail />} />
           <Route path="*" element={<div className='home'><h2>Page Not Found</h2></div>} />
         </Routes>
       </main>
