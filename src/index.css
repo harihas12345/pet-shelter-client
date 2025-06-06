@@ -4,7 +4,7 @@
   --light-gray: #f8f8f8;
   --medium-gray: #ddd;
   --black: #333;
-  --gray: #ccc; 
+  --gray: #ccc;
 }
 
 /* Global */
@@ -56,6 +56,7 @@ tr:hover {
 
 /* Responsive table */
 @media screen and (max-width: 600px) {
+
   table,
   thead,
   tbody,
@@ -155,8 +156,9 @@ tr:hover {
 /* Small screen mobile styles */
 @media screen and (max-width: 767px) {
   body {
-   /* background-color: red; /* Media query debugging */
-    padding: 0 15px; /* Add some padding on smaller screens */
+    /* background-color: red; /* Media query debugging */
+    padding: 0 15px;
+    /* Add some padding on smaller screens */
   }
 
   .logo {
@@ -164,7 +166,8 @@ tr:hover {
   }
 
   .row {
-    flex-direction: column; /* Stack elements vertically on mobile */
+    flex-direction: column;
+    /* Stack elements vertically on mobile */
   }
 
   .site-nav ul li {
@@ -175,4 +178,24 @@ tr:hover {
   .site-nav ul li:not(:nth-last-child(-n+2))::after {
     content: ''
   }
+
+
+  /* Animation for fade-in with a turn */
+  @keyframes fadeTurnIn {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+
+    100% {
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+
+  .intro-image {
+    opacity: 0;
+    animation: fadeTurnIn 1s ease-in-out forwards;
+  }
+
 }

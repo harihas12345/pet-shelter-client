@@ -3,7 +3,7 @@ import aboutUs from "../assets/about_us_1.jpeg";
 const AboutUs = () => {
   return (
     <div className="cta">
-      <img src={aboutUs} alt="Adoptable pets looking down toward viewer."  />
+      <img src={aboutUs} alt="Adoptable pets looking down toward viewer." className="intro-image" />
       <div className="cta-text-wrapper cta-text-wrapper--center">
         <h2>What we do</h2>
         <p>
